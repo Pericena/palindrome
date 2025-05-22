@@ -7,21 +7,21 @@ function cleanText(text) {
 }
 
 function isPalindrome(text) {
-  const cleanedText = cleanText(text);
-  return cleanedText === [...cleanedText].reverse().join("");
+  const cleaned = cleanText(text);
+  return cleaned === cleaned.split("").reverse().join("");
 }
 
 checkBtn.addEventListener("click", () => {
   const value = textInput.value;
 
   if (!value.trim()) {
-    alert("Please enter a value");
+    alert("Please input a value");
     return;
   }
 
   const message = isPalindrome(value)
-    ? `"${value}" is a palindrome`
-    : `"${value}" is not a palindrome`;
+    ? `${value} is a palindrome`
+    : `${value} is not a palindrome`;
 
   result.textContent = message;
 });
