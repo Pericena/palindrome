@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Palindrome Checker</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Palindrome Checker</h1>
+
+    <p class="instructions">
+      Enter a word or phrase to check if it is a <strong>palindrome</strong>.
+      <br>
+      A palindrome reads the same forward and backward,
+      ignoring capitalization, spaces, and punctuation.
+      <br><br>
+      <em>Valid examples:</em><br>
+      "A", "eye", "wave"
+    </p>
+
+    <div class="form-container">
+      <input type="text" id="text-input" placeholder="Type a word or phrase..." aria-label="Text input" />
+      <button id="check-btn" aria-label="Check if palindrome">Check</button>
+    </div>
+
+    <div id="result" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
